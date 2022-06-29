@@ -35,6 +35,8 @@ class ProductResource extends Resource
                 Forms\Components\TextInput::make('price')->required()->rule('numeric'),
                 Forms\Components\FileUpload::make('image'),
 
+
+
             ]);
     }
 
@@ -59,7 +61,7 @@ class ProductResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            RelationManagers\TagsRelationManager::class,
         ];
     }
 

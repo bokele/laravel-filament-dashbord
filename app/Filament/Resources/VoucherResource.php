@@ -72,9 +72,4 @@ class VoucherResource extends Resource
             'edit' => Pages\EditVoucher::route('/{record}/edit'),
         ];
     }
-
-    public static function getGloballySearchableAttributes(): array
-    {
-        return ['name', 'email'];
-    }
 }
