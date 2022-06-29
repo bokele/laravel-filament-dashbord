@@ -14,4 +14,9 @@ class ListPayments extends ListRecords
     {
         return [];
     }
+
+    protected function getTableContentFooter(): View
+    {
+        return view('filament/payments/footer');
+    }resources/views/filament/payments/footer.blade.php
 }
