@@ -5,6 +5,7 @@ namespace App\Filament\Resources\PaymentResource\Pages;
 use App\Filament\Resources\PaymentResource;
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\ListRecords;
+use Illuminate\Contracts\View\View;
 
 class ListPayments extends ListRecords
 {
@@ -18,5 +19,5 @@ class ListPayments extends ListRecords
     protected function getTableContentFooter(): View
     {
         return view('filament/payments/footer');
-    }resources/views/filament/payments/footer.blade.php
+    }
 }
